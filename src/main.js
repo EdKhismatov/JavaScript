@@ -2,6 +2,7 @@ import chalk from 'chalk';
 import { sayHi, sayText, sum, power, tomatoPrice } from './functions.js';
 import { lengthWord, letter, isStringStartsWith, people, logStringInfo } from './strings.js';
 import { square, radius, isEven, cashRegister, dimensions, schoolDesks, temperature } from './numbers.js';
+import { compare, compareStrings } from './compares.js';
 
 const color = new Date().toISOString();
 
@@ -43,3 +44,19 @@ console.log(cashRegister(128999));
 console.log(dimensions(4.5, 6.67));
 console.log(schoolDesks());
 console.log(temperature());
+
+console.log(compare(1, 1)); // true
+console.log(compare(1, '1')); // false
+console.log(compare(true, true)); // true
+console.log(compare(false, false)); // true
+console.log(compare(23, 23)); // true
+console.log(compare('abc', 'abc')); // true
+console.log(compare('ABC', 'abc')); // false
+
+let text = 'Начало';
+const sub = ` всех ${text.slice(0, text.length - 1)}`;
+console.log(compareStrings(text, 'начало')); //true
+text += sub;
+console.log(compareStrings(text, 'начало всех')); // false
+console.log(compareStrings(text, 'начало всех начал')); // true
+console.log(compareStrings('РжоМба', 'РЖОМБА')); // true
