@@ -61,3 +61,10 @@ export const schoolDesks = () => {
   const itog = (classes * ((students % 2) + students)) / 2;
   return `Для ${classes} классов по ${students} учеников в каждом, необходимо купить ${itog} парт(ы)`;
 };
+
+//Прогноз погоды
+export const temperature = () => {
+  const celsius = (Math.random() * (801 - 199) + 199).toFixed(6);
+  const floors = Math.floor(celsius % 10);
+  return chalk.green(`Прогноз погоды на TerraRandomis: Температура завтра ${chalk.blue(celsius - floors)} C`);
+};
