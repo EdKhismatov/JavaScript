@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { sayHi, sayText, sum, power } from './functions.js';
+import { sayHi, sayText, sum, power, tomatoPrice } from './functions.js';
 
 const color = new Date().toISOString();
 
@@ -12,3 +12,5 @@ console.log(sayHi(chalk.blue('Анатолий')));
 console.log(sayText('Мы выводим текст'));
 console.log(sum(1, 2, 3, 4, 5));
 console.log(power(2, 10));
+
+console.log(tomatoPrice(1, 22.5));

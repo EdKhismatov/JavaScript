@@ -15,3 +15,8 @@ export const sum = (a, b, c, d, e) => {
 export const power = (a, b) => {
   console.log(a ** b);
 };
+
+// Напишите функцию tomatoPrice, которая умеет считать цену томатов - она принимает два аргумента
+export const tomatoPrice = (a, b = 450) => {
+  console.log(a * b);
+};
