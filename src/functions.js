@@ -17,6 +17,6 @@ export const power = (a, b) => {
 };
 
 // Напишите функцию tomatoPrice, которая умеет считать цену томатов - она принимает два аргумента
-export const tomatoPrice = (a, b = 450) => {
-  console.log(a * b);
+export const tomatoPrice = (kg, price = 450) => {
+  console.log(kg * price);
 };
