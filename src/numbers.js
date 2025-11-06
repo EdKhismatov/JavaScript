@@ -1,3 +1,5 @@
+import chalk from 'chalk';
+
 export const generateInteger = (min, max) => {
   return Math.round(Math.random() * (max - min) + min);
 };
@@ -31,5 +33,14 @@ export const cashRegister = (summa) => {
       summa = summa - sum * denominations[key];
     }
   }
-  return money;
+  const itog = `${chalk.green('Купюр 5000 необходимо')} ${chalk.blue(money[5000])}
+${chalk.green('Купюр 2000 необходимо')} ${chalk.blue(money[2000])}
+${chalk.green('Купюр 1000 необходимо')} ${chalk.blue(money[1000])}
+${chalk.green('Купюр 500 необходимо')} ${chalk.blue(money[500])}
+${chalk.green('Купюр 100 необходимо')} ${chalk.blue(money[100])}
+${chalk.green('Купюр 50 необходимо')} ${chalk.blue(money[50])}
+${chalk.green('Купюр 10 необходимо')} ${chalk.blue(money[100])}
+${chalk.green('Рублей необходимо')} ${chalk.blue(money[1])}
+`;
+  return itog;
 };
