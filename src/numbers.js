@@ -44,3 +44,20 @@ ${chalk.green('Рублей необходимо')} ${chalk.blue(money[1])}
 `;
   return itog;
 };
+
+//Грузоперевозки
+let count = 0;
+export const dimensions = (width, length) => {
+  count += 1;
+  const summaCeil = Math.ceil(width * length);
+  const separation = '-----------';
+  return `чек#${count}\n${separation}\nШирина: ${width} м\nДлина: ${length} м\nПлощадь: ${width * length} м^2\n${separation}\nНужно оплатить: ${summaCeil} м^2\nЦена 1 м^2: 350 руб\nСумма за ${summaCeil} м^2: ${350 * summaCeil} руб\n${separation}\nДата расчёта ${new Date().toISOString()}`;
+};
+
+//Количество парт
+export const schoolDesks = () => {
+  const classes = generateInteger(5, 15);
+  const students = generateInteger(5, 15);
+  const itog = (classes * ((students % 2) + students)) / 2;
+  return `Для ${classes} классов по ${students} учеников в каждом, необходимо купить ${itog} парт(ы)`;
+};
