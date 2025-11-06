@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { sayHi, sayText, sum, power, tomatoPrice } from './functions.js';
 import { lengthWord, letter, isStringStartsWith, people, logStringInfo } from './strings.js';
-import { square, radius, isEven } from './numbers.js';
+import { square, radius, isEven, cashRegister } from './numbers.js';
 
 const color = new Date().toISOString();
 
@@ -38,3 +38,5 @@ console.log(radius(3, 12));
 
 console.log(isEven(3));
 console.log(isEven(2));
+
+console.log(cashRegister(128999));

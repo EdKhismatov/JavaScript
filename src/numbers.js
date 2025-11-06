@@ -19,3 +19,17 @@ export const radius = (x, y) => {
 export const isEven = (num) => {
   return num % 2 === 0;
 };
+
+// Кассовый аппарат
+export const cashRegister = (summa) => {
+  const denominations = [5000, 2000, 1000, 500, 100, 50, 10, 1];
+  const money = {};
+  for (const key in denominations) {
+    if (summa > 0) {
+      const sum = Math.floor(summa / denominations[key]);
+      money[denominations[key]] = sum;
+      summa = summa - sum * denominations[key];
+    }
+  }
+  return money;
+};
