@@ -6,6 +6,7 @@ import { compare, compareStrings } from './compares.js';
 import { age, FizzBuzz, randomYear } from './if.js';
 import { character, processing } from './switches.js';
 import { addProperty, removeProperty, compares, relocation, agePerson } from './objects.js';
+import { getRandomItem, logJoin, setNickname, add, orderFood } from './arrays.js';
 
 const color = new Date().toISOString();
 
@@ -87,41 +88,75 @@ const color = new Date().toISOString();
 // console.log(processing('Заказ доставлен'));
 // console.log(processing('Что то еще'));
 
-console.log(removeProperty({ id: 1, age: 20, name: 'alex' }, 'id'));
-console.log(addProperty({ id: 5, name: 'max' }, 'address', 'ул. Углеродная 5'));
+// console.log(removeProperty({ id: 1, age: 20, name: 'alex' }, 'id'));
+// console.log(addProperty({ id: 5, name: 'max' }, 'address', 'ул. Углеродная 5'));
+//
+// console.log(compares({ id: 90, name: 'stas', address: 0 }, { id: 90 }, 'id'));
+// console.log(
+//   relocation({
+//     id: 40,
+//     age: 25,
+//     name: 'Валентин Петрович',
+//     city: 'Москва',
+//     address: 'ул. Ленина 105 Б',
+//   }),
+// );
+//
+// const alex = {
+//   name: 'Alex',
+//   dateOfBirth: new Date('2024-05-15'),
+// };
+//
+// const jake = {
+//   name: 'Jake',
+//   dateOfBirth: new Date('1970-01-01T00:00:00.000Z'),
+// };
+//
+// const john = {
+//   name: 'John',
+//   dateOfBirth: new Date('2007-12-30T11:32:59.953+03:00'),
+// };
+//
+// const bob = {
+//   name: 'Bob',
+//   dateOfBirth: new Date(),
+// };
+//
+// console.log(chalk.blue(agePerson(alex)));
+// console.log(chalk.green(agePerson(jake)));
+// console.log(chalk.grey(agePerson(john)));
+// console.log(chalk.red(agePerson(bob)));
 
-console.log(compares({ id: 90, name: 'stas', address: 0 }, { id: 90 }, 'id'));
-console.log(
-  relocation({
-    id: 40,
-    age: 25,
-    name: 'Валентин Петрович',
-    city: 'Москва',
-    address: 'ул. Ленина 105 Б',
-  }),
-);
+// console.log(logJoin(['max', 'john', 123, null], '_')); // max_john_123_
+// console.log(logJoin([1, 2, 3], '-')); // 1-2-3
+//
+// const user = { id: 8, nickname: 'Саня Санёчек', nicknameHistory: [] };
+// console.log(setNickname(user, 'Александр Сильвестрович'));
+// console.log(setNickname(user, 'Саша'));
+//
+// console.log(getRandomItem([1, 2, 3, 4, 5, 6, 7, 8]));
 
-const alex = {
-  name: 'Alex',
-  dateOfBirth: new Date('2024-05-15'),
+// const list = [];
+//
+// add(list, 'Картошка');
+// add(list, 'Капуста');
+// add(list, 'Морковь');
+// add(list, 'Картошка');
+// add(list, 'Лук');
+// add(list, 'Морковь');
+// console.log(list);
+//
+// const list2 = [];
+// add(list2, 3);
+// add(list2, 4);
+// add(list2, 4);
+// add(list2, 4);
+// add(list2, 3);
+// add(list2, 2);
+// console.log(list2);
+
+const cheque = {
+  food: ['Сырный суп', 'Бургер', 'Лазанья'],
+  drinks: ['Пиво', 'Молочный коктейль'],
 };
-
-const jake = {
-  name: 'Jake',
-  dateOfBirth: new Date('1970-01-01T00:00:00.000Z'),
-};
-
-const john = {
-  name: 'John',
-  dateOfBirth: new Date('2007-12-30T11:32:59.953+03:00'),
-};
-
-const bob = {
-  name: 'Bob',
-  dateOfBirth: new Date(),
-};
-
-console.log(chalk.blue(agePerson(alex)));
-console.log(chalk.green(agePerson(jake)));
-console.log(chalk.grey(agePerson(john)));
-console.log(chalk.red(agePerson(bob)));
+console.log(orderFood(cheque));
