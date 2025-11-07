@@ -3,6 +3,7 @@ import { sayHi, sayText, sum, power, tomatoPrice } from './functions.js';
 import { lengthWord, letter, isStringStartsWith, people, logStringInfo } from './strings.js';
 import { square, radius, isEven, cashRegister, dimensions, schoolDesks, temperature } from './numbers.js';
 import { compare, compareStrings } from './compares.js';
+import { age, FizzBuzz, randomYear } from './if.js';
 
 const color = new Date().toISOString();
 
@@ -60,3 +61,7 @@ text += sub;
 console.log(compareStrings(text, 'начало всех')); // false
 console.log(compareStrings(text, 'начало всех начал')); // true
 console.log(compareStrings('РжоМба', 'РЖОМБА')); // true
+
+console.log(age());
+console.log(FizzBuzz());
+console.log(randomYear());
