@@ -8,6 +8,7 @@ import { character, processing } from './switches.js';
 import { addProperty, removeProperty, compares, relocation, agePerson } from './objects.js';
 import { getRandomItem, logJoin, setNickname, add, orderFood } from './arrays.js';
 import { mergeToNewObject, merge, report, showInfo } from './spread.js';
+import { comparison } from './type.js';
 
 const color = new Date().toISOString();
 
@@ -172,11 +173,28 @@ const color = new Date().toISOString();
 //
 // console.log(report(['Александр', 'Михаил', 'Валентин', 'Сергей', 'Артур']));
 
-const ryan = {
-  name: 'Райан',
-  age: 28,
-  surname: 'Гослинг',
-  gender: 'Мужчина',
-  photo: 'https://photos.com/photo.jpg',
-};
-console.log(showInfo(ryan));
+// const ryan = {
+//   name: 'Райан',
+//   age: 28,
+//   surname: 'Гослинг',
+//   gender: 'Мужчина',
+//   photo: 'https://photos.com/photo.jpg',
+// };
+// console.log(showInfo(ryan));
+
+// const object1 = { name: 'n', age: 10 };
+// const object2 = { age: 10, name: 'n' };
+
+// const object1 = { name: 'n', size: 3 };
+// const object2 = { size: 3 };
+//
+// const object1 = {};
+// const object2 = {};
+//
+// const object1 = { isAdult: true, email: 'example@mail.com', page: 100 };
+// const object2 = { page: 100, isAdult: true, email: 'example@mail.com' };
+//
+// const object1 = { checked: 1 };
+// const object2 = { checked: true };
+
+console.log(comparison(object1, object2));
