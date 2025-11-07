@@ -4,7 +4,7 @@ import { lengthWord, letter, isStringStartsWith, people, logStringInfo } from '.
 import { square, radius, isEven, cashRegister, dimensions, schoolDesks, temperature } from './numbers.js';
 import { compare, compareStrings } from './compares.js';
 import { age, FizzBuzz, randomYear } from './if.js';
-import { character } from './switches.js';
+import { character, processing } from './switches.js';
 
 const color = new Date().toISOString();
 
@@ -72,3 +72,16 @@ console.log(character('patrick'));
 console.log(character('squidward'));
 console.log(character('plankton'));
 console.log(character('mr. Crabs'));
+console.log(processing('Формируются чеки'));
+console.log(processing('Назначаются повара'));
+console.log(processing('Запекается'));
+console.log(processing('Нарезается'));
+console.log(processing('Варится'));
+console.log(processing('Жарится'));
+console.log(processing('Поиск курьера'));
+console.log(processing('Курьер берёт заказ'));
+console.log(processing('Курьер в пути'));
+console.log(processing('Курьер подъезжает'));
+console.log(processing('Клиент отказался от заказа'));
+console.log(processing('Заказ доставлен'));
+console.log(processing('Что то еще'));
