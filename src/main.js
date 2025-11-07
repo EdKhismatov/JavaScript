@@ -156,6 +156,7 @@ const color = new Date().toISOString();
 // console.log(list2);
 
 const cheque = {
-  drinks: ['Молочный коктейль'],
+  food: ['Сырный суп', 'Бургер', 'Лазанья'],
+  drinks: ['Пиво', 'Молочный коктейль'],
 };
 console.log(orderFood(cheque));
