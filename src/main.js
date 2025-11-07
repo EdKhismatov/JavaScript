@@ -4,6 +4,7 @@ import { lengthWord, letter, isStringStartsWith, people, logStringInfo } from '.
 import { square, radius, isEven, cashRegister, dimensions, schoolDesks, temperature } from './numbers.js';
 import { compare, compareStrings } from './compares.js';
 import { age, FizzBuzz, randomYear } from './if.js';
+import { character } from './switches.js';
 
 const color = new Date().toISOString();
 
@@ -65,3 +66,9 @@ console.log(compareStrings('РжоМба', 'РЖОМБА')); // true
 console.log(age());
 console.log(FizzBuzz());
 console.log(randomYear());
+
+console.log(character('spongebob'));
+console.log(character('patrick'));
+console.log(character('squidward'));
+console.log(character('plankton'));
+console.log(character('mr. Crabs'));
