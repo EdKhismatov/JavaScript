@@ -7,6 +7,7 @@ import { age, FizzBuzz, randomYear } from './if.js';
 import { character, processing } from './switches.js';
 import { addProperty, removeProperty, compares, relocation, agePerson } from './objects.js';
 import { getRandomItem, logJoin, setNickname, add, orderFood } from './arrays.js';
+import { mergeToNewObject, merge, report, showInfo } from './spread.js';
 
 const color = new Date().toISOString();
 
@@ -155,8 +156,27 @@ const color = new Date().toISOString();
 // add(list2, 2);
 // console.log(list2);
 
-const cheque = {
-  food: ['Сырный суп', 'Бургер', 'Лазанья'],
-  drinks: ['Пиво', 'Молочный коктейль'],
+// const cheque = {
+//   food: ['Сырный суп', 'Бургер', 'Лазанья'],
+//   drinks: ['Пиво', 'Молочный коктейль'],
+// };
+// console.log(orderFood(cheque));
+
+// const user = { name: 'Коля', age: 9 };
+// const diplom = { degree: 'Магистр', university: 'МГУ', department: 'Кафедра информационных технологий' };
+// console.log(mergeToNewObject(user, diplom));
+
+// const user = { name: 'Коля', age: 9, notes: 'Заметка от Коли!' };
+// const work = { address: 'Строительная 4', department: 'Шпаклёвщик', notes: 'Рабочая заметка' };
+// console.log(merge(user, work));
+//
+// console.log(report(['Александр', 'Михаил', 'Валентин', 'Сергей', 'Артур']));
+
+const ryan = {
+  name: 'Райан',
+  age: 28,
+  surname: 'Гослинг',
+  gender: 'Мужчина',
+  photo: 'https://photos.com/photo.jpg',
 };
-console.log(orderFood(cheque));
+console.log(showInfo(ryan));
