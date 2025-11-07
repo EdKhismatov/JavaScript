@@ -9,6 +9,7 @@ import { addProperty, removeProperty, compares, relocation, agePerson } from './
 import { getRandomItem, logJoin, setNickname, add, orderFood } from './arrays.js';
 import { mergeToNewObject, merge, report, showInfo } from './spread.js';
 import { comparison } from './type.js';
+import { averages, double, numbers, revert } from './loops.js';
 
 const color = new Date().toISOString();
 
@@ -197,4 +198,12 @@ const color = new Date().toISOString();
 // const object1 = { checked: 1 };
 // const object2 = { checked: true };
 
-console.log(comparison(object1, object2));
+// console.log(comparison(object1, object2));
+
+// console.log(numbers());
+// console.log(averages());
+// console.log(double());
+const text = 'Это просто пример🙉, вы можете вписать абсолютно любую свою строку 😎 :)';
+console.log(revert(text));
+
+//Подходящие люди
